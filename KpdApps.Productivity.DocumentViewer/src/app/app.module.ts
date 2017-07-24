@@ -6,6 +6,9 @@ import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
+import { MdListModule } from '@angular/material';
+import { MaterialModule } from '@angular/material';
+
 @NgModule({
     declarations: [
         AppComponent
@@ -13,9 +16,11 @@ import { HttpModule } from '@angular/http';
     imports: [
         BrowserModule,
         FormsModule,
-        HttpModule
+        HttpModule,
+        MdListModule,
+        MaterialModule
     ],
     providers: [],
-    bootstrap: [AppComponent]
+    bootstrap: [AppComponent],
 })
 export class AppModule { }

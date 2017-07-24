@@ -15,7 +15,7 @@ namespace KpdApps.Productivity.DocumentViewer.Controllers
         [HttpGet]
         public IEnumerable<string> Get()
         {
-            return new string[] { "value1", "value2" };
+            return new string[] { "Соглашение.docx", "Пример.pdf" };
         }
 
         // GET api/values/5

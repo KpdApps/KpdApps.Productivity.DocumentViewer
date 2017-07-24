@@ -9,10 +9,10 @@ import { Http } from '@angular/http';
 
 export class AppComponent implements OnInit {
     constructor(private _httpService: Http) { }
-    apiValues: string[] = [];
+    fileList: string[] = [];
     ngOnInit() {
         this._httpService.get('/api/files').subscribe(values => {
-            this.apiValues = values.json() as string[];
+            this.fileList = values.json() as string[];
         });
     }
 }

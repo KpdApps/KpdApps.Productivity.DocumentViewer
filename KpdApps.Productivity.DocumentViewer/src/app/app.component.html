@@ -1,7 +1,14 @@
-﻿<h1>Application says what?</h1>
-<ul *ngFor="let value of apiValues">
-  <li>{{value}}</li>
-</ul>
+﻿<h1>Files:</h1>
+<md-list *ngFor="let value of fileList">
+  <md-list-item>
+    <md-icon md-list-icon>delete</md-icon>
+    <md-icon md-list-icon>edit</md-icon>
+    <md-icon md-list-icon>remove</md-icon>
+    <md-icon md-list-icon>add</md-icon>
+    <md-icon md-list-icon>insert</md-icon>
+    <p md-line>{{value}}</p>
+  </md-list-item>
+</md-list>
 
 <!--The content below is only a placeholder and can be replaced.
 <div style="text-align:center">
@@ -21,5 +28,5 @@
   <li>
     <h2><a target="_blank" href="http://angularjs.blogspot.ca/">Angular blog</a></h2>
   </li>
-</ul>   
+</ul>
 -->
