@@ -5,10 +5,24 @@
     <md-icon md-list-icon>edit</md-icon>
     <md-icon md-list-icon>remove</md-icon>
     <md-icon md-list-icon>add</md-icon>
-    <md-icon md-list-icon>insert</md-icon>
+    <md-icon md-list-icon>settings_input_component</md-icon>
     <p md-line>{{value}}</p>
   </md-list-item>
 </md-list>
+
+
+<h2 class="title">Drop a file</h2>
+
+<div ngFileDropzone (fileDrop)="addFile($event)" [ngClass]="{'hover': isHover }" (dragenter)="isHover = true" (dragleave)="isHover = false" (drop)="isHover = false">
+  <md-icon class="big">file_upload</md-icon>
+</div>
+
+<h2 *ngIf="files.length">Dropped files</h2>
+<ul>
+  <li *ngFor="let file of files">
+    {{file.name}} ({{file.size}} bytes)
+  </li>
+</ul>
 
 <!--The content below is only a placeholder and can be replaced.
 <div style="text-align:center">

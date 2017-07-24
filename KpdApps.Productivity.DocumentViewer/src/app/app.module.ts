@@ -1,13 +1,17 @@
-﻿import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+﻿import { NgModule } from '@angular/core';
 
-import { AppComponent } from './app.component';
+import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { MdListModule } from '@angular/material';
 import { MaterialModule } from '@angular/material';
+
+import { FileDropzoneModule } from 'angular-file-dropzone';
+
+import { AppComponent } from './app.component';
 
 @NgModule({
     declarations: [
@@ -18,7 +22,8 @@ import { MaterialModule } from '@angular/material';
         FormsModule,
         HttpModule,
         MdListModule,
-        MaterialModule
+        MaterialModule,
+        FileDropzoneModule
     ],
     providers: [],
     bootstrap: [AppComponent],
