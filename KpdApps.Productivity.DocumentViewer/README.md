@@ -1,6 +1,22 @@
-# DocumentViewer
+﻿# DocumentViewer
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.3.
+
+## Getting Started
+
+Restore dependencies 
+
+'dotnet restore'
+
+'npm install'
+
+'ng build'
+
+Ready to develop 
+
+'dotnet watch run'
+
+'ng serve --proxy-config proxy.config.json'
 
 ## Development server
 
