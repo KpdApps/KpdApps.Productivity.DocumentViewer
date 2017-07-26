@@ -26,4 +26,8 @@
    <DotNetCliToolReference Include="Microsoft.DotNet.Watcher.Tools" Version="1.0.0" />
 </ItemGroup>
 
+<ItemGroup>
+  <ProjectReference Include="..\KpdApps.Productivity.DocumentViewer.DataConnections\KpdApps.Productivity.DocumentViewer.DataConnections.csproj" />
+</ItemGroup>
+
 </Project>
