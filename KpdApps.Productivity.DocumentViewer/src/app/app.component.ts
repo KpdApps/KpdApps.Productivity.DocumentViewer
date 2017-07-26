@@ -12,7 +12,7 @@ export class AppComponent implements OnInit {
     fileList: string[] = [];
     ngOnInit() {
         this._httpService.get('/api/files').subscribe(values => {
-            this.fileList = values.json() as string[];
+            this.fileList = values.json();// as string[];
         });
     }
 }
